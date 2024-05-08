@@ -30,6 +30,8 @@ export default {
       'light-green':'#E8EEE7',
       'color-1':'#9E9D9D',
       'color-2':'#EAEAEA',
+      'color-3': '#828282',
+      'color-4':'#DDEFE0'
     },
   },
   plugins: [daisyui],

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-
+import spark from "../assets/spark.png";
+import rocket from "../assets/rocket.png";
 import { NavbarMain } from "../component/NavbarMain";
-import banner from "../assets/Banner-2.png";
+import banner from "../assets/banner-image.png";
 import Union from "../assets/Union.png";
 import { Footer } from "../component/Footer";
 
@@ -26,8 +27,37 @@ export const Home = () => {
           </h1>
         </div>
         <div class="grid grid-col-3 grid-flow-col gap-7">
-          <div className="flex flex-col items-center">
-            <img src={banner} alt="banner" className="rounded-3xl" />
+          <div className="flex items-center justify-center">
+            <div className="relative">
+              <div className="absolute bg-white p-3 top-16 left-0 rounded-3xl shadow-black">
+                <img className="w-16 absolute top-0 left-0 mb-3" src={spark} />
+                <h1 className="text-5xl pl-4 p-2 pt-5 font-semibold">40%</h1>
+                <p className="text-lg text-color-3">
+                  Achieved reduction in <br /> project execution time <br /> by
+                  optimising team <br /> availability
+                </p>
+              </div>
+              <div className="absolute bg-white flex flex-row p-4 bottom-20 left-4 rounded-full shadow-black">
+                <div className="rounded-full bg-color-4 p-5">
+                  <img src={rocket} alt="rocket" />
+                </div>
+                <div className="p-2">
+                  <h1 className="text-2xl font-semibold">10 DAYS</h1>
+                  <p className="text-color-3">Staff Deployment</p>
+                </div>
+              </div>
+              <div className="absolute bg-black p-6 bottom-0 right-4 rounded-2xl shadow-black">
+                <div className="flex flex-row items-center p-2">
+                  <h1 className="text-5xl text-white font-semibold p-3">$0.5</h1>
+                  <p className="text-sm text-color-3 mt-6">MILLION</p>
+                </div>
+                <p className="text-lg text-color-3">
+                  Reduced client expenses <br /> by saving on hiring and <br />{" "}
+                  employee costs.
+                </p>
+              </div>
+              <img src={banner} alt="banner" className="rounded-3xl ml-28 mb-10" />
+            </div>
           </div>
           <div className="flex flex-col">
             <h1 className="text-5xl font-semibold pt-7">
@@ -44,7 +74,7 @@ export const Home = () => {
             </button>
           </div>
         </div>
-        <div className="grid grid-col-3 grid-flow-col gap-3 bg-light-green rounded-3xl">
+        <div className="grid grid-col-3 grid-flow-col gap-3 bg-light-green rounded-3xl mt-16">
           <div className="mt-5 mx-8">
             <h2
               style={{ fontFamily: `'Covered By Your Grace', cursive` }}
