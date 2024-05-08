@@ -1,16 +1,10 @@
-import { Navigate }from "react-router-dom"
-const email = localStorage.getItem("email");
+import { Navigate } from "react-router-dom";
 
 export const ProtectedRoute = ({ children }) => {
-    if (!email) {
-        return (
-            <Navigate to="/register" replace={true} />
-        )
-    }
-    else {
-        return (
-            <>{children}</>
-        )
-    }
-
-}
+  const email = localStorage.getItem("email");
+  if (!email) {
+    return <Navigate to="/register" replace={true} />;
+  } else {
+    return <>{children}</>;
+  }
+};

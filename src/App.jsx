@@ -1,6 +1,5 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Navbar } from "./component/Navbar";
 import { Register } from "./pages/Register";
 import { Home } from "./pages/Home";
 import { Congo } from "./pages/Congo";
